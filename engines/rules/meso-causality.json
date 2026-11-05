@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "rulesetId": "meso-causality-v1",
+  "statutoryBasis": "PerBPOM No. 15/2022 tentang Penerapan Farmakovigilans; WHO-UMC System for Standardised Case Causality Assessment",
+  "effectiveDate": "2022-08-01",
+  "provenance": "Berita Negara Republik Indonesia Tahun 2022 Nomor 798; WHO Collaborating Centre for International Drug Monitoring",
+  "auditMetadata": "Repository Maintainer — adamriofc",
+  "reportingTimelines": {
+    "SERIOUS_FATAL_OR_LIFE_THREATENING": {
+      "maxCalendarDays": 15,
+      "description": "KTD serius yang menyebabkan kematian atau mengancam jiwa wajib dilaporkan paling lambat 15 hari kalender"
+    },
+    "SERIOUS_OTHER": {
+      "maxCalendarDays": 15,
+      "description": "KTD serius lainnya (rawat inap, cacat permanen, kelainan kongenital) wajib dilaporkan paling lambat 15 hari kalender"
+    },
+    "NON_SERIOUS": {
+      "maxCalendarDays": 180,
+      "description": "KTD tidak serius dilaporkan secara berkala dalam Laporan Berkala Pasca Pemasaran (PBRER)"
+    }
+  },
+  "causalityLevels": [
+    "CERTAIN",
+    "PROBABLE",
+    "POSSIBLE",
+    "UNLIKELY",
+    "CONDITIONAL_UNCLASSIFIED",
+    "UNASSESSABLE"
+  ]
+}

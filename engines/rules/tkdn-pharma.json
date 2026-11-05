@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "rulesetId": "tkdn-pharma-v1",
+  "statutoryBasis": "Permenperin No. 16/2020 tentang Ketentuan dan Tata Cara Penghitungan Nilai Tingkat Komponen Dalam Negeri Produk Farmasi; UU No. 3/2014 tentang Perindustrian",
+  "effectiveDate": "2020-05-18",
+  "provenance": "Berita Negara Republik Indonesia Tahun 2020 Nomor 496",
+  "auditMetadata": "Repository Maintainer — adamriofc",
+  "dimensionWeights": {
+    "activePharmaceuticalIngredient": {
+      "weight": 0.50,
+      "description": "Kandungan Bahan Baku Aktif (Active Pharmaceutical Ingredient / API) produksi dalam negeri"
+    },
+    "researchAndDevelopment": {
+      "weight": 0.30,
+      "description": "Riset dan Pengembangan (R&D) serta uji klinis/pre-klinis yang dilakukan di Indonesia"
+    },
+    "productionAndFormulation": {
+      "weight": 0.15,
+      "description": "Proses produksi formulasi sediaan farmasi di fasilitas manufaktur ber-CPOB dalam negeri"
+    },
+    "packagingMaterials": {
+      "weight": 0.05,
+      "description": "Bahan kemas primer dan sekunder bersumber dari produsen domestik"
+    }
+  },
+  "procurementRules": {
+    "minTkdnForPreference": 25.0,
+    "minCombinedTkdnBmp": 40.0,
+    "maxPricePreference": 15.0,
+    "mandatoryProcurementThreshold": 40.0
+  }
+}

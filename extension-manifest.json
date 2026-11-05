@@ -1,0 +1,69 @@
+{
+  "id": "pharma-id",
+  "name": "Indonesian Pharmaceutical & Healthcare Intelligence Extension",
+  "version": "1.0.0",
+  "domain": "pharma",
+  "author": "adamriofc",
+  "license": "AGPL-3.0-or-later",
+  "description": "Production-grade Pharmaceutical, Healthcare, BPOM Regulatory Affairs, Local Content (TKDN Farmasi), Fornas LKPP Tender, Mean Kinetic Temperature (MKT) Cold Chain, and Clinical Privacy compliance for Indonesian enterprises.",
+  "statutoryFrameworks": [
+    "UU No. 17/2023 tentang Kesehatan",
+    "UU No. 27/2022 tentang Pelindungan Data Pribadi (UU PDP)",
+    "PP No. 32/2017 tentang Jenis dan Tarif atas Jenis Penerimaan Negara Bukan Pajak (PNBP) BPOM",
+    "PerBPOM No. 34/2018 tentang Pedoman Cara Pembuatan Obat yang Baik (CPOB)",
+    "PerBPOM No. 6/2020 tentang Perubahan atas PerBPOM No. 9/2019 tentang Pedoman Teknis Cara Distribusi Obat yang Baik (CDOB)",
+    "Permenperin No. 16/2020 tentang Ketentuan dan Tata Cara Penghitungan Nilai TKDN Produk Farmasi",
+    "Kepmenkes HK.01.07/MENKES/6477/2021 tentang Formularium Nasional (Fornas)",
+    "Perpres No. 12/2021 tentang Pengadaan Barang/Jasa Pemerintah (E-Katalog LKPP)"
+  ],
+  "skills": [
+    {
+      "id": "bpom-nie-navigator",
+      "name": "BPOM Drug Registration & NIE Navigator",
+      "description": "Navigate BPOM drug registration pathways (100/150/300-day SLA), ACTD dossiers, and compute statutory PNBP fees under PP No. 32/2017.",
+      "path": "skills/bpom-nie-navigator/SKILL.md",
+      "risk_level": "HIGH",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "tkdn-farmasi-calculator",
+      "name": "Local Content (TKDN Farmasi) Calculator",
+      "description": "Calculate 4-dimension local content value for pharmaceutical finished products and APIs per Permenperin No. 16/2020.",
+      "path": "skills/tkdn-farmasi-calculator/SKILL.md",
+      "risk_level": "MEDIUM",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "ekatalog-fornas-strategy",
+      "name": "E-Katalog LKPP & Fornas Margin Strategist",
+      "description": "Model hospital/PBF distributor margins, PPN 12%, carrying cost, and price ceilings for Formularium Nasional E-Katalog sectoral tenders.",
+      "path": "skills/ekatalog-fornas-strategy/SKILL.md",
+      "risk_level": "HIGH",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "meso-pharmacovigilance",
+      "name": "MESO Pharmacovigilance & Adverse Drug Reaction Auditor",
+      "description": "Audit adverse drug reactions against WHO-UMC causality categories and calculate BPOM 15-day urgent reporting timelines under PerBPOM No. 15/2019.",
+      "path": "skills/meso-pharmacovigilance/SKILL.md",
+      "risk_level": "CRITICAL",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "cpob-cdob-auditor",
+      "name": "CPOB & CDOB Good Practices Auditor",
+      "description": "Audit compliance with Good Manufacturing Practice (CPOB/cGMP) and Good Distribution Practice (CDOB/GDP) under BPOM regulations, including Mean Kinetic Temperature (MKT) cold-chain compliance.",
+      "path": "skills/cpob-cdob-auditor/SKILL.md",
+      "risk_level": "CRITICAL",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "clinical-trial-pdp-compliance",
+      "name": "Clinical Trial Data Privacy & Health PDP Auditor",
+      "description": "Audit clinical trial health data handling, specific personal data classifications, and cross-border data transfer safeguards under Indonesian UU No. 27/2022.",
+      "path": "skills/clinical-trial-pdp-compliance/SKILL.md",
+      "risk_level": "CRITICAL",
+      "rule_type": "statutory"
+    }
+  ]
+}

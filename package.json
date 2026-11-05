@@ -1,0 +1,57 @@
+{
+  "name": "indonesia-pharma-agent-skills",
+  "version": "1.0.0",
+  "description": "Production-grade Pharmaceutical, Healthcare, BPOM Regulatory Affairs, Local Content (TKDN Farmasi), Fornas LKPP Tender, and CDOB Cold Chain MKT extension for Indonesian AI agents.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node tests/units/pharma-engines.test.js && node tests/units/mkt-cold-chain.test.js && node tests/units/extension-manifest.test.js",
+    "test:integration": "node tests/integration/core-integration.test.js",
+    "validate": "node scripts/validate-extension.js"
+  },
+  "author": "adamriofc",
+  "license": "AGPL-3.0-or-later",
+  "peerDependencies": {
+    "indonesia-business-agent-skills": ">=6.21.0"
+  },
+  "peerDependenciesMeta": {
+    "indonesia-business-agent-skills": {
+      "optional": true
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "extension-manifest.json",
+    "engines",
+    "skills",
+    "README.md",
+    "LICENSE",
+    "SKILL_PROTOCOL.md"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamriofc/indonesia-pharma-agent-skills.git"
+  },
+  "keywords": [
+    "pharma",
+    "pharmaceutical",
+    "bpom",
+    "cpob",
+    "cdob",
+    "cold-chain",
+    "mean-kinetic-temperature",
+    "mkt",
+    "tkdn-farmasi",
+    "fornas",
+    "ekatalog-lkpp",
+    "pharmacovigilance",
+    "meso",
+    "indonesia",
+    "ai-agent",
+    "skills"
+  ]
+}

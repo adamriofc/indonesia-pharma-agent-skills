@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "rulesetId": "bpom-pnbp-v1",
+  "statutoryBasis": "PP No. 32/2017 tentang Jenis dan Tarif atas Jenis Penerimaan Negara Bukan Pajak yang Berlaku pada Badan Pengawas Obat dan Makanan; PerBPOM Standar Registrasi Obat",
+  "currency": "IDR",
+  "effectiveDate": "2017-06-01",
+  "provenance": "Lembaran Negara Republik Indonesia Tahun 2017 Nomor 191; Tambahan Lembaran Negara Republik Indonesia Nomor 6113",
+  "auditMetadata": "Repository Maintainer — adamriofc",
+  "fees": {
+    "OBAT_BARU": {
+      "pra_registrasi": 1000000,
+      "registrasi_zat_aktif_baru": 150000000,
+      "registrasi_kombinasi_baru": 100000000,
+      "registrasi_bentuk_sediaan_baru": 50000000,
+      "registrasi_indikasi_baru": 30000000
+    },
+    "OBAT_COPY": {
+      "pra_registrasi": 1000000,
+      "registrasi_copy_uji_be": 30000000,
+      "registrasi_copy_tanpa_uji_be": 15000000
+    },
+    "REGISTRASI_VARIASI": {
+      "variasi_mayor": 10000000,
+      "variasi_minor_persetujuan": 5000000,
+      "variasi_minor_notifikasi": 1500000
+    },
+    "REGISTRASI_ULANG": {
+      "registrasi_ulang_5_tahun": 5000000
+    }
+  },
+  "serviceLevelAgreements": {
+    "JALUR_100_HARI": {
+      "maxWorkingDays": 100,
+      "description": "Jalur evaluasi khusus untuk obat penyakit serius mengancam jiwa, orphan drug, atau program kesehatan nasional",
+      "qualifyingCriteria": [
+        "orphan_drug",
+        "life_threatening_disease",
+        "national_health_program",
+        "pediatric_priority"
+      ]
+    },
+    "JALUR_150_HARI": {
+      "maxWorkingDays": 150,
+      "description": "Jalur evaluasi untuk obat baru dengan persetujuan otoritas regulatori terpercaya (SRA/WHO-listed) atau obat copy esensial",
+      "qualifyingCriteria": [
+        "sra_approved",
+        "who_prequalified",
+        "generic_essential",
+        "export_only"
+      ]
+    },
+    "JALUR_300_HARI": {
+      "maxWorkingDays": 300,
+      "description": "Jalur evaluasi standar untuk obat baru entitas kimia baru (NCE), biologi, atau biosimilar konvensional",
+      "qualifyingCriteria": [
+        "new_chemical_entity",
+        "standard_new_drug",
+        "novel_biologic"
+      ]
+    }
+  }
+}

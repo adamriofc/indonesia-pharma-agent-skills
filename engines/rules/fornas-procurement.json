@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "rulesetId": "fornas-procurement-v1",
+  "statutoryBasis": "Keputusan Menteri Kesehatan tentang Formularium Nasional (Fornas); Perpres No. 12/2021; UU No. 7/2021 tentang Harmonisasi Peraturan Perpajakan (PPN 12%)",
+  "effectiveDate": "2025-01-01",
+  "provenance": "Kemenkes RI Formularium Nasional; LKPP E-Katalog Nasional",
+  "auditMetadata": "Repository Maintainer — adamriofc",
+  "margins": {
+    "distributorPbfDefault": 0.08,
+    "hospitalPharmacyTiers": {
+      "generic": 0.20,
+      "branded": 0.15,
+      "highCostSpecialty": 0.10
+    }
+  },
+  "taxRates": {
+    "ppnRate": 0.12
+  },
+  "workingCapitalCostOfFund": {
+    "annualRate": 0.09
+  }
+}

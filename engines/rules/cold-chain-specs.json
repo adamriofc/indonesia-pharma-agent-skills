@@ -1,0 +1,61 @@
+{
+  "statutoryFramework": "PerBPOM No. 6/2020 tentang Perubahan atas PerBPOM No. 9/2019 tentang Pedoman Teknis Cara Distribusi Obat yang Baik (CDOB)",
+  "standardReferences": [
+    "USP <1079> Good Storage and Shipping Practices",
+    "WHO TRS 961 Annex 9: Temperature and humidity monitoring systems",
+    "WHO PQS/E006: Temperature monitoring devices"
+  ],
+  "defaultConstants": {
+    "activationEnergyDeltaH": 83144.0,
+    "gasConstantR": 8.314472,
+    "deltaHOverR": 10000.0,
+    "absoluteZeroOffset": 273.15
+  },
+  "storageConditions": {
+    "COLD_CHAIN_2_8": {
+      "name": "Chilled / Cold Chain (Rantai Dingin)",
+      "minCelsius": 2.0,
+      "maxCelsius": 8.0,
+      "freezeRiskThresholdCelsius": 0.0,
+      "criticalExcursionUpperCelsius": 15.0,
+      "maxTolerableExcursionHours": 24.0,
+      "description": "Standard cold chain for vaccines, biologics, insulin, and thermolabile therapeutics."
+    },
+    "DEEP_FREEZE_MINUS_20": {
+      "name": "Freezer / Deep Freeze",
+      "minCelsius": -25.0,
+      "maxCelsius": -15.0,
+      "freezeRiskThresholdCelsius": null,
+      "criticalExcursionUpperCelsius": -10.0,
+      "maxTolerableExcursionHours": 12.0,
+      "description": "Deep freeze for frozen vaccines (e.g. OPV, varicella) and biological reagents."
+    },
+    "ULTRA_COLD_MINUS_80": {
+      "name": "Ultra-Low Temperature (ULT)",
+      "minCelsius": -86.0,
+      "maxCelsius": -60.0,
+      "freezeRiskThresholdCelsius": null,
+      "criticalExcursionUpperCelsius": -50.0,
+      "maxTolerableExcursionHours": 6.0,
+      "description": "Ultra-cold storage for mRNA vaccines, viral vectors, and specialized biopharmaceuticals."
+    },
+    "COOL_STORAGE_8_15": {
+      "name": "Cool Storage (Suhu Sejuk)",
+      "minCelsius": 8.0,
+      "maxCelsius": 15.0,
+      "freezeRiskThresholdCelsius": 2.0,
+      "criticalExcursionUpperCelsius": 20.0,
+      "maxTolerableExcursionHours": 48.0,
+      "description": "Cool storage conditions as prescribed by manufacturer packaging specifications."
+    },
+    "CONTROLLED_ROOM_15_25": {
+      "name": "Controlled Room Temperature (CRT / Suhu Kamar Terkontrol)",
+      "minCelsius": 15.0,
+      "maxCelsius": 25.0,
+      "freezeRiskThresholdCelsius": 8.0,
+      "criticalExcursionUpperCelsius": 30.0,
+      "maxTolerableExcursionHours": 72.0,
+      "description": "Ambient warehouse/dispensary storage for solid oral dosage forms and general pharmaceuticals."
+    }
+  }
+}
