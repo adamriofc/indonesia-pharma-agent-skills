@@ -1,0 +1,5 @@
+a78f005d30ef09b6bc80c061876990bea35107782d21db21caa57aa1c572f47c  engines/rules/bpom-pnbp.json
+3634afa98c26a04d92fdd54109b5c6f95fdcbfc45c71ed1f0a7fdd78e431f7c8  engines/rules/cold-chain-specs.json
+a2fb302e378cb738eefb747649c54079f4482a7e89f4bb27465db58b3640ba17  engines/rules/fornas-procurement.json
+179115b423e5e214a8c64071cceb1b589d3fc269183e4067b5a46c714914d266  engines/rules/meso-causality.json
+3c36507abb71681ff93ff46a52b87c2beadd38d88ba9754cd2f2045748df4a4c  engines/rules/tkdn-pharma.json

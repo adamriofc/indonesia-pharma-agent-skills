@@ -6,7 +6,12 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "node tests/units/pharma-engines.test.js && node tests/units/mkt-cold-chain.test.js && node tests/units/extension-manifest.test.js",
+    "test:security": "node tests/security/injection.test.js && node tests/security/adversarial.test.js",
     "test:integration": "node tests/integration/core-integration.test.js",
+    "test:smoke": "bash scripts/package-smoke-test.sh",
+    "test:sandbox": "bash scripts/sandbox-test.sh",
+    "test:perf": "node scripts/perf-gate.js",
+    "sha256:verify": "bash scripts/sha256sums.sh verify",
     "validate": "node scripts/validate-extension.js"
   },
   "author": "adamriofc",
@@ -27,7 +32,8 @@
     "skills",
     "README.md",
     "LICENSE",
-    "SKILL_PROTOCOL.md"
+    "SKILL_PROTOCOL.md",
+    "SHA256SUMS.txt"
   ],
   "engines": {
     "node": ">=20.0.0"

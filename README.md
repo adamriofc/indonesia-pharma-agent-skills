@@ -481,10 +481,22 @@ The repository includes an automated test runner validating all engines, schemas
 # Run unit tests across all 6 pharmaceutical engines
 npm test
 
+# Run prompt injection & adversarial fuzzing security tests
+npm run test:security
+
 # Run dual integration test with Core Hub
 npm run test:integration
 
-# Execute the 10-Check Automated Extension Release Gate
+# Run isolated package smoke install test
+npm run test:smoke
+
+# Run offline Bubblewrap kernel sandbox test
+npm run test:sandbox
+
+# Run ultra-low latency performance benchmark gate
+npm run test:perf
+
+# Execute the 16-Check Automated Extension Release Gate
 npm run validate
 ```
 
